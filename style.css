@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img{
+    cursor: pointer;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.right-menu-bar img{
+    width: 25px;
+    margin-right: 25px;
+}
+
+.right-menu-bar .user-icon{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+
+.left-menu-bar .menu-icon{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.left-menu-bar .menu-logo{
+    width: 135px;
+}
+
+.search-box{
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.mic-icon{
+    width: 20px;
+}
+
+.search-box input{
+    width: 400px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    color: black;
+    font-weight: 800;
+
+}
+
+.search-box img{
+    width: 18px;
+}
+
+/* -------------SideBar-------------- */
+
+.sidebar{
+    width: 15%;
+    height: 100vh;
+    padding-top: 30px;
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+.small-sidebar{
+    width: 5%;
+}
+
+.small-sidebar p{
+    display: none;
+}
+
+.small-sidebar h3{
+    display: none;
+}
+
+.small-sidebar hr{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.shortcut-links a img{
+    width: 25px;
+}
+
+.shortcut-links a{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    width: fit-content;
+    /* flex-wrap: wrap; */
+}
+
+.shortcut-links a:first-child{
+    color: red;
+}
+
+.shortcut-links a p{
+    font-weight: 800;
+}
+
+.shortcut-links hr{
+    width: 85%;
+    /* height: 1px; */
+}
+
+.subscribed-list{
+
+    /* background-color: blue; */
+}
+.subscribed-list h3{
+    font-size: 15px;
+    color: black;
+    font-weight: 1000;
+    margin-bottom: 15px;
+}
+
+.subscribed-list a{
+    display: flex;
+}
+
+.subscribed-list a img{
+    width: 30px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.subscribed-list p{
+    font-weight: 800;
+    font-size: 16px;
+}
+
+/* --------main-------- */
+
+.container{
+    margin-top: -46%;
+    margin-left: 230px;
+}
+
+.large-container{
+    margin-left: 80px;
+}
+
+/* .banner{
+    background-color: red;
+} */
+
+.banner img{
+    width: 100%;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.banner h1{
+    position: absolute;
+    top: 20%;
+    left: 21%;
+    font-weight: bold;
+    color: rgb(62, 59, 56);
+}
+
+.banner a{
+    position: absolute;
+    top: 45%;
+    left: 21%;
+    font-weight: 1000;
+    padding: 15px 30px;
+    background-color: rgba(254, 4, 4, 0.8);
+    color: white;
+}
+
+.banner a:hover{
+    background-color: red;
+}
+ 
+/* ---------videos List---------- */
+
+.vid-list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    margin-top: 10px;
+}
+
+.vid a img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.vid .flex-div img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.vid-info{
+    color: black;
+}
+
+.vid-info a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    display: block;
+
+}
+
+
+.vid-info p{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+@media(max-width: 700px){
+
+    .left-menu-bar .menu-icon{
+        display: none;
+    }
+
+    .sidebar{
+        display: none;
+    }
+    nav{
+        margin-left: -20px;
+    }
+    .left-menu-bar .menu-logo{
+        width: 65px;
+        
+    }
+
+    .middle-menu-bar .search-box{
+        width: 225px;
+        margin-left: 7px;
+    }
+
+    .right-menu-bar img{
+        display: none;
+    }
+
+    .right-menu-bar .user-icon{
+        display: block;
+    }
+
+    .middle-menu-bar .mic-icon{
+        width: 15px;
+    }
+
+    .container{
+        margin-left: 0px;
+        padding: 10px;
+        margin-top: 1px;
+    }
+
+    .banner h1{
+        font-size: 20px;
+        left: 20px;
+    }
+
+    .banner a{
+        left: 20px;
+    }
+}
+
+
+/* ---------Play-Video Container---------- */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-video{
+    flex-basis: 69%;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.main-video video{
+    width: 100%;
+    border-radius: 3px;
+}
+
+/* ---------Right SideBar--------- */
+
+.right-sidebar{
+    flex-basis: 30%;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.video-info img{
+    width: 100%;
+}
+
+.side-video-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.side-video-list a{
+    flex-basis: 49%;
+}
+
+.side-video-list img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.side-video-list .more-info{
+    flex-basis: 49%;
+}
+
+.side-video-list h3{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+.side-video-list p{
+    font-size: 13px;
+    font-weight: 1000;
+}
+
+.row .tag a{
+    color: black;
+    font-weight: 1000;
+}
+
+.row .main-vid-info p{
+    font-weight: bold;
+}
+
+.tag h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+}
+
+.main-vid-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-vid-icons a{
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.main-vid-icons img{
+    width: 20px;
+    margin-right: 10px; 
+}
+
+.row hr{
+    margin-top: 5px;
+}
+
+.publisher{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.publisher-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.publisher-info a{
+    flex-basis: 18%;
+}
+
+.publisher-info img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.publisher-info .text-info{
+    flex-basis: 77%;
+    font-size: 15px;
+}
+
+.text-info h3{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.text-info p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.publisher .subscriber-btn{
+    padding: 10px 30px;
+    background-color: rgb(237, 22, 22);
+    color: #fff;
+    font-weight: bold;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.video-description{
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.video-description h4{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.comments{
+    /* background-color: red; */
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.comments img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comments input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgb(80, 78, 78);
+    padding-top: 8px;
+    background: transparent;  
+}
+
+.old-comments{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    margin-top: 30px;
+    padding-left: 45px;
+}
+
+.old-comments img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.old-comments h3{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.old-comments h3 span{
+    font-size: 14px;
+}
+
+.old-comments p{
+    font-size: 13px;
+}
+
+.comment-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    /* background-color: red; */
+}
+
+.comment-icons img{
+    width: 20px;
+}
+
+.comment-icons span{
+    font-size: 15px;
+    margin-left: -9px;
+    margin-right: 18px;
+}
+
+.comment-icons a{
+    color: rgb(34, 34, 230);
+}
+
+@media(max-width: 700px){
+
+    .row{
+        flex-direction: column;
+    }
+
+    .main-video{
+        padding-left: 12px;
+    }
+
+    .main-video video{
+        width: 97%;
+    }
+
+    .right-sidebar{
+        padding-left: 15px;
+    }
+
+    .old-comments{
+        font-size: 13px;
+        padding-left: 0px;
+    }
+
+    .comments{
+        margin-left: -30px;
+    }
+}
